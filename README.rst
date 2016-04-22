@@ -88,3 +88,42 @@ Problem Scenarios
     |                    |                        | reflect gameplay is useful |
     |                    |                        | to new players as well.    |
     +--------------------+------------------------+----------------------------+
+
+*******************
+User Stories
+*******************
+
+.. table::
+
+    +--------------------------------------------------------------------------+
+    | As Michelle the Dungeonmaster, I want to be able to uphold the integrity |
+    | of our games by digitalizing the character sheets, and the dice rolling  |
+    | in order to avoid players modifying their character sheets and stats     |
+    | after their creation, or fudging the numbers of a bad roll.              |
+    +--------------------------------------------------------------------------+
+
+.. table::
+
+    +--------------------------------------------------------------------------+
+    | As John the Experience Player, I want to be able to use one program to   |
+    | keep track of my character stats that responds to my digital dice rolls. |
+    | I want my character sheet to immediately respond to new information.     |
+    +--------------------------------------------------------------------------+
+
+.. table::
+
+    +--------------------------------------------------------------------------+
+    | As Christopher the Newbie, I don't want to have to read a bunch of player|
+    | manuals before I can play this game with my family. I want to be prompted|
+    | for all the necessary information, and have my character sheet created   |
+    | for me automatically based on what I put in.                             |
+    +--------------------------------------------------------------------------+
+
+.. table::
+
+    +--------------------------------------------------------------------------+
+    | As Christopher the Newbie, I also don't want to have to learn the math   |
+    | behind different types of events, and would prefer if it could be        |
+    | calculated for me, and updated in the appropriate spot on my character   |
+    | sheet.                                                                   |
+    +--------------------------------------------------------------------------+
