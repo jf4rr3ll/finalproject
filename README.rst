@@ -127,3 +127,19 @@ User Stories
     | calculated for me, and updated in the appropriate spot on my character   |
     | sheet.                                                                   |
     +--------------------------------------------------------------------------+
+
+*******************
+Acceptance Stories
+*******************
+
+.. table::
+
+    +--------------------------------------------------------------------------+
+    | Scenario 1: Creating a Character                                         |
+    | Given that all requested inputs have been entered,                       |
+    | And none of the inputs have generated an error,                          |
+    | When the user "rolls" for their skills,                                  |
+    | Then their character sheet will automatically populated with the correct |
+    | traits and skill values for their character.                             |
+    +--------------------------------------------------------------------------+
+

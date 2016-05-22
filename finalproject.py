@@ -3,13 +3,15 @@
 """Final Project Module"""
 
 import random
+import dice
+
+
+print 'Welcome, Adventurer! We are about to embark on an exciting journey, \
+but first we need some information about you. Type createcharacter() to begin!'
 
 
 def createcharacter():
-    """Defines a function to create a character
-    """
-    print ('Welcome, Adventurer! We are about to embark on an exciting journey,'
-    + ' but first we need some information about you.')
+    "Defines the function to create a new character sheet"
     PLAYERNAME = raw_input('Player Name: ')
     CHARNAME = raw_input('Character Name: ')
     CHARAGE = raw_input('Welcome ' + CHARNAME + ', how old are you? ')
@@ -27,22 +29,41 @@ def createcharacter():
     CHARALIGN2 = raw_input('Complete your alignment: Lawful, Neutral, or'
                            ' Chaotic? ')
     CHARALIGN = CHARALIGN2 + ' ' + CHARALIGN1
-    print 'Welcome ' + CHARNAME + ', are you ready to determine your abilities?'
+    return
+
+print 'Welcome ' + CHARNAME + ', are you ready to determine your abilities? \
+Type rollstats() to get your stats!'
+
+def rollstats():
+    "Defines the function that rolls character stats."
     print 'Excellent! Let\'s roll the dice!'
     ROLL = raw_input('Hit Enter to roll the dice')
-    CHARSTR = random.randint(1, 10)
-    CHARDEX = random.randint(1, 10)
-    CHARCON = random.randint(1, 10)
-    CHARINT = random.randint(1, 10) 
-    CHARWIS = random.randint(1, 10)
-    CHARCHA = random.randint(1, 10)
-    ABILITIES = ('Strength: ' + str(CHARSTR) + '.' +  '\n'
-    + 'Dexterity: ' + str(CHARDEX) + '.' +  '\n'
-    + 'Constitution: ' + str(CHARCON) + '.' +  '\n'
-    + 'Intelligence: ' + str(CHARINT) + '.' +  '\n'
-    + 'Wisdom: ' + str(CHARWIS) + '.' +  '\n'
-    + 'Charisma: ' + str(CHARCHA) + '.' +  '\n')
+    CHARSTR = str(random.randint(1, 10))
+    CHARDEX = str(random.randint(1, 10))
+    CHARCON = str(random.randint(1, 10))
+    CHARINT = str(random.randint(1, 10))
+    CHARWIS = str(random.randint(1, 10))
+    CHARCHA = str(random.randint(1, 10))
+    ABILITIES = ('Strength: ' + CHARSTR + '\n'
+                 + 'Dexterity: ' + CHARDEX + '\n'
+                 + 'Constitution: ' + CHARCON + '\n'
+                 + 'Intelligence: ' + CHARINT + '\n'
+                 + 'Wisdom: ' + CHARWIS + '\n'
+                 + 'Charisma: ' + CHARCHA + '\n')
+    return
+
+HP = 100
+CHARSHEET = (('-' * 40) + ' \nCharacter Name: ' + CHARNAME + ' HP: '
+             + str(HP) + ' \nClass: ' + CHARCLASS + ' Alignment: '
+             + CHARALIGN + '\n' + ('-' * 40) + ABILITIES + ('-' * 40))
         
-    return CHARNAME + ' ' + CHARCLASS + ' ' + CHARALIGN + ' ' + ABILITIES
+print CHARSHEET
 
 
+def damagetaken():
+    ROLL = dice.rolldie()
+    DAMAGE = int(dice.diecast)
+    HP = HP - DAMAGE
+    return HP
+
+print 'To get your updated character sheet, type print CHARSHEET.'
