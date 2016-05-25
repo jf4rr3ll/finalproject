@@ -97,11 +97,11 @@ def rollstats():
     CHARSHEET = (('-' * 40) + '\nPlayer: ' + PLAYERNAME + '\n' + ('-' * 40)
                  + ' \nCharacter Name: ' + CHARNAME + '\nLevel: '
                  + str(CHARLEVEL)
-                 + '| HP: '+ str(HP) + '| AC: ' + str(AC) + '\n' + ('-' * 40)
-                 + ' \nClass: ' + CHARCLASS + '| Alignment: '+ CHARALIGN
+                 + ' | HP: '+ str(HP) + ' | AC: ' + str(AC) + '\n' + ('-' * 40)
+                 + ' \nClass: ' + CHARCLASS + ' | Alignment: '+ CHARALIGN
                  + '\n' + ('-' * 40) + '\nAge: ' + str(CHARAGE) + ' Height: '
                  + CHARHEIGHT + ' Weight: ' + CHARWEIGHT + '\nEye Color: '
-                 + CHAREYES + '| Hair Color: ' + CHARHAIR + '| Skin Color: '
+                 + CHAREYES + ' | Hair Color: ' + CHARHAIR + ' | Skin Color: '
                  + CHARSKIN + '\n' + ('-' * 40) + '\n' + ABILITIES + ('-' * 40))
     print ('You rolled the following stats: \n' + ABILITIES + '\nWould you \
 like to see your completed character sheet? \nIf so, type "print CHARSHEET". \
