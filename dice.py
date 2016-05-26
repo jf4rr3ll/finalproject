@@ -26,23 +26,24 @@ def rolldie():
         'Invalid dice, Adventurer. Please try again.'        
     """
     diecast = str(0)
-    dice = str(raw_input('Roll what type of dice? D4, D6, D8, D10, D12, D20: '))
-    if dice == 'd4':
+    dice = str(raw_input('Roll what type of dice? D4, D6, D8, \
+                         D10, D12, D20: ')).lower
+    if dice == 'D4':
         diecast = random.randint(1, 4)
         return 'You rolled ' + str(diecast)
-    elif dice == 'd6':
+    elif dice == 'D6':
         diecast = random.randint(1, 6)
         return 'You rolled ' + str(diecast)
-    elif dice == 'd8':
+    elif dice == 'D8':
         diecast = random.randint(1, 8)
         return 'You rolled ' + str(diecast)
-    elif dice == 'd10':
+    elif dice == 'D10':
         diecast = str(random.randint(0, 9))+str(random.randint(0, 9))+'%'
         return 'You rolled ' + str(diecast)
-    elif dice == 'd12':
+    elif dice == 'D12':
         diecast = random.randint(1, 12)
         return 'You rolled ' + str(diecast)
-    elif dice == 'd20':
+    elif dice == 'D20':
         diecast = random.randint(1, 20)
         return 'You rolled ' + str(diecast)
     else:

@@ -116,22 +116,22 @@ def rolldie():
     """
     global DIECAST
     DICE = str(raw_input('Roll what type of dice? D4, D6, D8, D10, D12, D20: '))
-    if DICE == 'd4':
+    if DICE == 'D4':
         DIECAST = random.randint(1, 4)
         return DIECAST
-    elif DICE == 'd6':
+    elif DICE == 'D6':
         DIECAST = random.randint(1, 6)
         return DIECAST
-    elif DICE == 'd8':
+    elif DICE == 'D8':
         DIECAST = random.randint(1, 8)
         return DIECAST
-    elif DICE == 'd10':
+    elif DICE == 'D10':
         DIECAST = str(random.randint(0, 9))+str(random.randint(0, 9))+'%'
         return DIECAST
-    elif DICE == 'd12':
+    elif DICE == 'D12':
         DIECAST = random.randint(1, 12)
         return DIECAST
-    elif DICE == 'd20':
+    elif DICE == 'D20':
         DIECAST = random.randint(1, 20)
         return DIECAST
     else:
